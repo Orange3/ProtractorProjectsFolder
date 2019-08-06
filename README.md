@@ -1,7 +1,7 @@
 # ProtractorProjectsFolder
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
-# NPM and NodeJS should be intalled to run project
+## NPM and NodeJS should be intalled to run project
 
 ## Use
 
