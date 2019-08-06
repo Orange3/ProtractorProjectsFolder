@@ -8,16 +8,17 @@ npm install -g typescript  ---> To install typreScript globaly;
 
 npm install -g jasmine ---> To install jasmine globaly;
 
-webdriver-manager update ---> To update webdriver;
-
-webdriver-manager start ---> To launch Selenium standalone server;
-
 ## Clone project 
- https://github.com/Orange3/ProtractorProjectsFolder.git
+ Clone project in webstorme or another IDE using link https://github.com/Orange3/ProtractorProjectsFolder.git
 
 
 ## Running end-to-end tests
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+Run in terminal: webdriver-manager update ---> To update webdriver;
+
+webdriver-manager start ---> To launch Selenium standalone server;
+
+Run `ng e2e` in terminal to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Allure reports
 Allure test result will be located in 'allure-result' folder
