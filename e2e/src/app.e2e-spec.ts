@@ -28,7 +28,7 @@ describe('New York hotels', () => {
 
   it('Check that found hotels are from NY', () => {
     const hostelPage = new HotelsPage();
-    expect(hostelPage.getFoundHotels().count()).toBe(46);
+    expect(hostelPage.getFoundHotels().count()).toBeGreaterThan(0);
     hostelPage.getFoundHotels().each((item) => {
       expect(item.getText()).toMatch('New York');
     });
