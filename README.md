@@ -6,6 +6,8 @@ npm install -g protractor ---> To install Protractor globaly;
 
 npm install -g typescript  ---> To install typreScript globaly;
 
+npm install -g jasmine ---> To install jasmine globaly;
+
 webdriver-manager update ---> To update webdriver;
 
 webdriver-manager start ---> To launch Selenium standalone server;
