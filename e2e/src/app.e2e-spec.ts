@@ -1,10 +1,9 @@
-import { SearchPage } from './pages/search.page';
+import {SearchPage} from './pages/search.page';
 import {HotelsPage} from './pages/hotels.page';
 import {browser, by, element, logging} from 'protractor';
 import {protractor} from 'protractor/built/ptor';
-import {TIMEOUT} from 'dns';
 
-describe('workspace-project App', () => {
+describe('New York hotels', () => {
   const EC = protractor.ExpectedConditions;
   beforeAll(async () => {
     browser.driver.manage().timeouts().implicitlyWait(5000);
@@ -14,25 +13,25 @@ describe('workspace-project App', () => {
 
   });
 
-  it('Search hotels in New York for 7 days from today',  () => {
+  it('Search hotels in New York for 7 days from today', () => {
     const searchPage = new SearchPage();
     searchPage.destinationField.click();
     searchPage.destinationField.sendKeys('New York');
     searchPage.popularBtn.click();
     while (!searchPage.calendar.isDisplayed()) {
-    searchPage.checkInButton.click();
+      searchPage.checkInButton.click();
     }
     searchPage.currentDateBtn.click();
     searchPage.lastDateBtn.click();
     searchPage.searchBtn.click();
-    });
+  });
 
-  it('Check that found hotels from NY', () => {
+  it('Check that found hotels are from NY', () => {
     const hostelPage = new HotelsPage();
     expect(hostelPage.getFoundHotels().count()).toBe(46);
     hostelPage.getFoundHotels().each((item) => {
-        expect(item.getText()).toMatch('New York');
-      });
+      expect(item.getText()).toMatch('New York');
+    });
   });
 
   afterEach(async () => {
