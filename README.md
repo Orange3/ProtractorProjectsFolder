@@ -21,5 +21,5 @@ webdriver-manager start ---> To launch Selenium standalone server;
 Run `ng e2e` in terminal to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Allure reports
-Allure test result will be located in e2e/'allure-result' folder after first launch
+Allure test result will be located in e2e/allure-result folder after first launch
 
